@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { DataContext, TaskContext, ImageContext } from './components/context/AllContex';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { GlobalStyle } from './globalStyle';
+import { About, BigO, CodeEditor, DataStructures, Home, Navbar, ViewCode } from './components/index';
 
 function App() {
+  const [value, setValue] = useState('');
+  const [task, setTask] = useState('');
+  const [imgValue, setImgValue] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Router>
+        <Navbar />
+        <Switch>
+          <DataContext.Provider value={{ value, setValue }}>
+            <TaskContext.Provider value={{ task, setTask }}>
+              <ImageContext.Provider value={{ imgValue, setImgValue }}>
+                <Route path="/" exact component={Home} />
+                <Route path="/about" exact component={About} />
+                <Route path="/datastructures" exact component={DataStructures} />
+                <Route path="/bigonotation" exact component={BigO} />
+                <Route path="/viewcode" exact component={ViewCode} />
+                <Route path="/codeeditor" exact component={CodeEditor} />
+              </ImageContext.Provider>
+            </TaskContext.Provider>
+          </DataContext.Provider>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
