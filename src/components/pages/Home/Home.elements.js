@@ -25,15 +25,21 @@ export const Border = styled.div`
   ${SharedBorder};
 `;
 
+export const HomeSubheader = styled.h4`
+  text-transform: uppercase;
+  font-family: 'Code';
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+`;
+
 export const HomeContainer = styled.div`
-border: 2px solid red;
+    padding: 3rem 3rem 0;
     height: 100%;
     width: 100vw;
-    max-width: 120rem;  
+    max-width: 120rem;
 `;
 
 export const ButtonWrapper = styled.div`
-border: 2px solid green;
     height: min-content;
     min-height: 8rem;
     width: 100%;

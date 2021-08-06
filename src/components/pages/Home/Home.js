@@ -7,6 +7,7 @@ import {
     Hero,
     HeroContainer,
     HeroHeader,
+    HomeSubheader,
     HomeContainer,
     ButtonWrapper,
     ButtonTitle,
@@ -51,6 +52,7 @@ const Home = () => {
                     <HeroContainer>
                         <HeroHeader>algolab</HeroHeader>
                         <Border />
+                        <HomeSubheader>a new way of learning algorithms</HomeSubheader>
                     </HeroContainer>
                 </Hero>
                 <HomeContainer
@@ -58,16 +60,16 @@ const Home = () => {
                         display: 'grid',
                         gridTemplate: `repeat(${getData}, 1fr) / repeat(${getAlgoWidth}, 1fr)`
                     }}>
-                    {SortedData.map(item => {
+                    {SortedData.map((item, index) => {
                         return (
-                            <ButtonWrapper>
-                                <ButtonTitle key={item.id}>{item.title}</ButtonTitle>
+                            <ButtonWrapper key={item.id}>
+                                <ButtonTitle >{item.title}</ButtonTitle>
                                 <ButtonContainer>
-                                    <AlgoButton key={item.title}
+                                    <AlgoButton
                                         to="/viewcode" onClick={() => { setValue(item.title); setTask(item.task); setImgValue(item.image); }}>
                                         view
                                     </AlgoButton>
-                                    <AlgoButton key={item.title}
+                                    <AlgoButton
                                         to="/codeeditor" onClick={() => { setValue(item.title); setTask(item.task); setImgValue(item.image); }}>
                                         code editor
                                     </AlgoButton>

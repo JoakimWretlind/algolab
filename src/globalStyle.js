@@ -1,11 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 import Cinzel from './components/fonts/CinzelRegular.ttf';
+import Code from './components/fonts/Code.otf';
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Cinzel';
     src: url(${Cinzel});
-  }
+  };
+  @font-face {
+    font-family: 'Code';
+    src: url(${Code});
+  };
 
   *,
   ::after,

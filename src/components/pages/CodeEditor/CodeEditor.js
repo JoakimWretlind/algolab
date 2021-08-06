@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { DataContext, ImageContext, TaskContext } from '../../context/AllContex';
+import { TaskP } from '../ViewCode/View.elements';
 
 import {
     Section,
@@ -21,6 +22,7 @@ const CodeEditor = () => {
                 <HeroContainer>
                     <HeroHeader>{value}</HeroHeader>
                     <Border />
+                    <TaskP>{task}</TaskP>
                 </HeroContainer>
             </Hero>
         </Section>

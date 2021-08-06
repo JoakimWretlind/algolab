@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GlobalStyle } from '../../globalStyle';
 import { NavbarData } from './NavbarData';
+import * as FaIcons from 'react-icons/fa';
 import { NavbarMain, NavToggle, Nav, NavItem } from './NavbarStyling'
 
 const Sidebar = () => {
@@ -10,13 +11,13 @@ const Sidebar = () => {
         <>
             <NavbarMain>
                 <GlobalStyle />
-                <NavToggle to="#" onClick={() => setNavbar(!navbar)}>
-                    open
+                <NavToggle to="#" >
+                    <FaIcons.FaBars onClick={() => setNavbar(!navbar)} />
                 </NavToggle>
             </NavbarMain>
             <Nav navbar={navbar}>
-                <NavToggle to="#" onClick={() => setNavbar(!navbar)}>
-                    close
+                <NavToggle to="#">
+                    <FaIcons.FaTimes onClick={() => setNavbar(!navbar)} />
                 </NavToggle>
                 {NavbarData.map((item, index) => {
                     return <NavItem to={item.path} key={index} onClick={() => setNavbar(!navbar)}>

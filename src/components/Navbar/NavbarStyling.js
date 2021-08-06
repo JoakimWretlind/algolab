@@ -9,12 +9,16 @@ export const NavbarMain = styled.div`
 export const NavToggle = styled(Link)`
     font-size: 3rem;
     width: min-content;
-    margin: 3rem 0 0 0;
-    margin-left: ${({ navbar }) => (navbar ? '10rem' : '60%')};
+    margin-top: 1.8rem;
+    margin-left: ${({ navbar }) => (navbar ? '-3rem' : '0rem')};
+    margin-bottom: 5rem;
     display: flex;
     justify-content: flex-end;   
-    color: green;
+    color: #f00;
     transition: .3s ease-out;
+    @media screen and (min-width: 767px){
+         margin-left: ${({ navbar }) => (navbar ? '10rem' : '60%')};
+    }
 `
 
 export const Nav = styled.nav`
@@ -30,10 +34,14 @@ export const Nav = styled.nav`
     justify-content: flex-start;    
     transition: .7s;
     z-index: 10;
+    @media screen and (min-width: 767px){
+        padding-left: 5rem;
+    }
 `
 
 export const NavItem = styled(Link)`
     color: #ffffff;
     cursor: pointer;
+    font-size: clamp(2rem, 3vw, 2.2rem);
     margin-bottom: 3rem;    
 `;

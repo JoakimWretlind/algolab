@@ -9,7 +9,8 @@ import {
     ViewContainer,
     ViewButton,
     CodeImage,
-    Border
+    Border,
+    TaskP
 } from './View.elements';
 
 const CodeView = () => {
@@ -24,6 +25,7 @@ const CodeView = () => {
                     <HeroContainer>
                         <HeroHeader>{value}</HeroHeader>
                         <Border />
+                        <TaskP>{task}</TaskP>
                     </HeroContainer>
                 </Hero>
                 <ViewContainer>
