@@ -11,7 +11,6 @@ import {
     NavToggle,
     ShowSolution
 } from './Editor.elements';
-import { AiOutlineArrowRight } from "react-icons/ai";
 
 
 const Editor = ({ language, displayName, value, onChange }) => {
@@ -25,17 +24,15 @@ const Editor = ({ language, displayName, value, onChange }) => {
         <EditorContainer solution={solution}>
             <EditorTitle>
                 {displayName}
-
                 <NavToggle to="#">
-                    <ShowSolution onClick={() => setSolution(!solution)}>
-                        show solution
+                    <ShowSolution onClick={() => setSolution(!solution)} >
+                        {solution ? "hide solution" : "show solution"}
                     </ShowSolution>
                 </NavToggle>
             </EditorTitle>
             <ControlledEditor
                 onBeforeChange={handleChange}
                 value={value}
-                className="code-mirror-wrapper"
                 options={{
                     lineWrapping: true,
                     lint: true,

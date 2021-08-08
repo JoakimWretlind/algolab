@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
 import { DataContext, ImageContext, TaskContext } from '../../context/AllContex';
-import { TaskP } from '../ViewCode/View.elements';
 import Editor from './Editor';
 
 import {
@@ -29,7 +28,6 @@ const CodeEditor = () => {
 
     return (
         <>
-
             <Section>
                 <Hero>
                     <HeroContainer>
@@ -39,12 +37,10 @@ const CodeEditor = () => {
                     </HeroContainer>
                 </Hero>
             </Section>
-
             <PaneContainer>
                 <TopPane>
                     <ButtonContainer>
-
-                        <EditorButton onClick={() => setSrcDoc(`
+                        <EditorButton to="#" onClick={() => setSrcDoc(`
                                 <html>
                                     <script>${js}</script>
                                 </html>`)}>

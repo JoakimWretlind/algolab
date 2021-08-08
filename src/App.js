@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DataContext, TaskContext, ImageContext, ClickContext } from './components/context/AllContex';
+import { DataContext, TaskContext, ImageContext } from './components/context/AllContex';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { GlobalStyle } from './globalStyle';
 import { About, BigO, CodeEditor, DataStructures, Home, Navbar, ViewCode } from './components/index';
