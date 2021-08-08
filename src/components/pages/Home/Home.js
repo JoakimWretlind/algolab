@@ -30,16 +30,16 @@ const Home = () => {
     useEffect(() => { }, [windowSize.width]);
 
     let getAlgoWidth = window.innerWidth;
-    if (getAlgoWidth < 500) {
+    if (getAlgoWidth < 600) {
         getAlgoWidth = 1;
     }
-    if (getAlgoWidth > 500 && getAlgoWidth < 715) {
+    if (getAlgoWidth > 600 && getAlgoWidth < 900) {
         getAlgoWidth = 2;
     }
-    if (getAlgoWidth > 715 && getAlgoWidth < 1000) {
+    if (getAlgoWidth > 900 && getAlgoWidth < 1100) {
         getAlgoWidth = 3
     }
-    if (getAlgoWidth > 1000) {
+    if (getAlgoWidth > 1100) {
         getAlgoWidth = 4;
     };
 
@@ -58,6 +58,7 @@ const Home = () => {
                 <HomeContainer
                     style={{
                         display: 'grid',
+                        justifyItems: 'center',
                         gridTemplate: `repeat(${getData}, 1fr) / repeat(${getAlgoWidth}, 1fr)`
                     }}>
                     {SortedData.map((item, index) => {

@@ -5,7 +5,7 @@ import Editor from './Editor';
 
 import {
     Section,
-    MaButton,
+    EditorButton,
     Hero,
     HeroContainer,
     HeroHeader,
@@ -16,7 +16,7 @@ import {
     ImgContainer,
     Img,
     PaneContainer,
-    Iframe
+    ButtonContainer,
 } from './Editor.elements';
 
 
@@ -29,13 +29,7 @@ const CodeEditor = () => {
 
     return (
         <>
-            <MaButton onClick={() => setSrcDoc(`
-        <html>
-          <script>${js}</script>
-        </html>
-      `)}>
-                run
-            </MaButton>
+
             <Section>
                 <Hero>
                     <HeroContainer>
@@ -48,7 +42,16 @@ const CodeEditor = () => {
 
             <PaneContainer>
                 <TopPane>
+                    <ButtonContainer>
 
+                        <EditorButton onClick={() => setSrcDoc(`
+                                <html>
+                                    <script>${js}</script>
+                                </html>`)}>
+                            run
+                        </EditorButton>
+                        <EditorButton to="/" >home</EditorButton>
+                    </ButtonContainer>
                     <Editor
                         language="javascript"
                         displayName="JS"

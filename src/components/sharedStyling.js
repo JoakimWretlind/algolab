@@ -59,6 +59,13 @@ export const DefaultButton = css`
     background: #333;
     color: #fff;
     border-radius: .4rem;
+    box-shadow: 0 .2rem .4rem rgba(0,0,0,.5);
+    transition: .2s ease-out;
+    &:hover {
+        background: #373E47;
+        box-shadow: inset 0 -.15rem .15rem rgba(255,255,255,1),
+        inset 0 .15rem .15rem rgba(0,0,0,1);
+    }
 `;
 
 export const SharedBorder = css`

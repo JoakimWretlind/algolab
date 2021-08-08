@@ -1,10 +1,11 @@
 import styled from 'styled-components';
-import { SharedSection, SharedHero, SharedHeroContainer, SharedHeader, SharedBorder, SharedSubheader } from '../../sharedStyling';
+import { SharedSection, SharedHero, SharedHeroContainer, SharedHeader, DefaultButton, SharedBorder, SharedSubheader } from '../../sharedStyling';
 import { Link } from 'react-router-dom';
 
 export const Section = styled.section`
   ${SharedSection};
   display: flex;
+  border: 3px solid red;
 `;
 
 export const Hero = styled.div`
@@ -13,13 +14,11 @@ export const Hero = styled.div`
 `;
 
 export const HeroContainer = styled.div`
-  ${SharedHeroContainer};
-  
+  ${SharedHeroContainer};  
 `;
 
 export const HeroHeader = styled.h1`
-  ${SharedHeader}
-  
+  ${SharedHeader}  
 `;
 
 export const Border = styled.div`
@@ -54,24 +53,12 @@ export const EditorTitle = styled.div`
 `;
 
 export const NavToggle = styled.div` 
-padding-top: .6rem;
+    padding-top: .6rem;
     font-size: 2.4rem;     
     color: white;
     margin-left: 7rem;
     cursor: pointer;
 `
-export const MaButton = styled.span`
-  position: absolute;
-  top: 29vh;
-  left: 20vw;
-  color: #fff;
-  font-size: 2.2rem;
-  cursor: pointer;
-  padding: 0 1rem;
-  border: .1rem solid #f1f1f1;
-  border-radius: .4rem;
-  z-index: 3;
-`;
 
 export const PaneContainer = styled.div`
   position: absolute;
@@ -101,17 +88,47 @@ export const Pane = styled.div`
   padding: 0 3rem;
 `;
 
-
-
 export const ImgContainer = styled.div`
     position: absolute;
-  top: 0;
-  right: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    top: 0;
+    right: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const Img = styled.img`
-  height: 40vh;
+    height: 40vh;
+`;
+
+export const ShowSolution = styled.p`
+  color: #f1f1f1;
+  margin-bottom: .6rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  border: .1rem solid #f1f1f1;
+  padding: .4rem .8rem;
+  border-radius: .4rem;
+`;
+
+export const ButtonContainer = styled.div`
+    height: 40vh;
+    width: max-content;
+    padding: 2rem;
+    background: #1F2023;  
+    display: flex;
+    flex-direction: column;
+    
+`;
+
+export const EditorButton = styled(Link)`  
+  ${DefaultButton};
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 12rem;
+  font-size: 1.4rem;
 `;

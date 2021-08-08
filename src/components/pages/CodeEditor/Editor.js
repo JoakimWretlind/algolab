@@ -9,16 +9,13 @@ import {
     EditorContainer,
     EditorTitle,
     NavToggle,
-    MaButton,
+    ShowSolution
 } from './Editor.elements';
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 
 const Editor = ({ language, displayName, value, onChange }) => {
     const [solution, setSolution] = useState(false);
-    const [navbar, setNavbar] = useState(false);
-    const [js, setJs] = useState('')
-    const [srcDoc, setSrcDoc] = useState('')
 
     function handleChange(editor, data, value) {
         onChange(value)
@@ -30,8 +27,9 @@ const Editor = ({ language, displayName, value, onChange }) => {
                 {displayName}
 
                 <NavToggle to="#">
-                    solution
-                    <AiOutlineArrowRight onClick={() => setSolution(!solution)} />
+                    <ShowSolution onClick={() => setSolution(!solution)}>
+                        show solution
+                    </ShowSolution>
                 </NavToggle>
             </EditorTitle>
             <ControlledEditor
@@ -47,7 +45,6 @@ const Editor = ({ language, displayName, value, onChange }) => {
                 }}
             />
         </EditorContainer>
-
     )
 }
 

@@ -30,10 +30,12 @@ export const HomeSubheader = styled.h4`
 `;
 
 export const HomeContainer = styled.div`
-    padding: 3rem 3rem 0;
+    padding: 3rem;
     height: 100%;
     width: 100vw;
     max-width: 120rem;
+    display: flex;
+    justify-content: center;
 `;
 
 export const ButtonWrapper = styled.div`
