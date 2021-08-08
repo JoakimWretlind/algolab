@@ -10,7 +10,7 @@ import {
     ViewButton,
     CodeImage,
     Border,
-    TaskP
+    ViewSubheader
 } from './View.elements';
 
 const CodeView = () => {
@@ -25,7 +25,7 @@ const CodeView = () => {
                     <HeroContainer>
                         <HeroHeader>{value}</HeroHeader>
                         <Border />
-                        <TaskP>{task}</TaskP>
+                        <ViewSubheader>{task}</ViewSubheader>
                     </HeroContainer>
                 </Hero>
                 <ViewContainer>

@@ -14,10 +14,10 @@ export const NavToggle = styled(Link)`
     margin-bottom: 5rem;
     display: flex;
     justify-content: flex-end;   
-    color: #f00;
+    color: #fff;
     transition: .3s ease-out;
     @media screen and (min-width: 767px){
-         margin-left: ${({ navbar }) => (navbar ? '10rem' : '60%')};
+         margin-left: ${({ navbar }) => (navbar ? '20rem' : '80%')};
     }
 `
 
@@ -26,7 +26,7 @@ export const Nav = styled.nav`
     padding: 0 3rem;
     top: 0;    
     left: ${({ navbar }) => (navbar ? '0' : '-32rem')};
-    background: #333;    
+    background: linear-gradient(-8deg, #333, #222);
     width: 30rem;
     height: 100%;
     display: flex;

@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import { SharedSection, SharedHero, SharedHeroContainer, SharedHeader, DefaultButton, SharedBorder } from '../../sharedStyling';
+import { SharedSection, SharedHero, SharedHeroContainer, SharedHeader, DefaultButton, SharedBorder, SharedSubheader } from '../../sharedStyling';
 import { Link } from 'react-router-dom';
 
 export const Section = styled.section`
   ${SharedSection};
-  background: orangered;
+  background: #D8D3CE;
 `;
 
 export const Hero = styled.div`
   ${SharedHero};
-  background: burlywood;
+  background: #D8D0CC;
 `;
 
 export const HeroContainer = styled.div`
@@ -40,12 +40,8 @@ export const ViewContainer = styled.div`
     }
 `;
 
-export const TaskP = styled.p`
-  max-width: 90rem;
-  font-size: 1.6rem;
-  margin-top: 1rem;
-  letter-spacing: .1rem;
-  line-height: 1.6;
+export const ViewSubheader = styled.h4`
+  ${SharedSubheader}
 `;
 
 export const CodeImage = styled.img`

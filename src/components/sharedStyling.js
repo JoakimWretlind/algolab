@@ -21,6 +21,20 @@ export const SharedHero = css`
     box-shadow: 0 .3rem .6rem rgba(0,0,0,.9);
 `;
 
+export const SharedSubheader = css`
+    text-transform: uppercase;
+    font-family: 'Code';
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    letter-spacing: 0;
+    margin: 0 1rem;
+    text-align: center;
+    max-width: 90rem;
+    @media screen and(min-width: 500px){
+        margin: 0 3rem;
+        letter-spacing: .1rem;
+    }
+`;
+
 export const SharedHeroContainer = css`
     height: 100%;
     width: 100%;
@@ -35,7 +49,7 @@ export const SharedHeroContainer = css`
 export const SharedHeader = css`
   font-family: 'Cinzel';
   text-transform: uppercase;
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2rem, 7vw, 5rem);
   letter-spacing: clamp(.1rem, 2vw, 1.2rem);
   text-align: center;
 `;

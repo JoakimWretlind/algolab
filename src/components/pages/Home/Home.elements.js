@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import { SharedSection, SharedHero, SharedHeroContainer, SharedHeader, SharedBorder } from '../../sharedStyling';
+import { SharedSection, SharedHero, SharedHeroContainer, SharedHeader, SharedBorder, SharedSubheader } from '../../sharedStyling';
 import { Link } from 'react-router-dom';
 
 export const Section = styled.section`
   ${SharedSection};
   display: flex;
-  background: orange;
+  background: #C6BFB6;
 `;
 
 export const Hero = styled.div`
   ${SharedHero};
-  background: beige;
+  background: #B3ACA2;
 `;
 
 export const HeroContainer = styled.div`
@@ -26,10 +26,7 @@ export const Border = styled.div`
 `;
 
 export const HomeSubheader = styled.h4`
-  text-transform: uppercase;
-  font-family: 'Code';
-  font-size: 1.6rem;
-  letter-spacing: .1rem;
+    ${SharedSubheader}
 `;
 
 export const HomeContainer = styled.div`
