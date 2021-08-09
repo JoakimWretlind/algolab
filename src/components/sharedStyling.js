@@ -74,3 +74,23 @@ export const SharedBorder = css`
     background: #000000;
     margin: .4rem 0 1rem;
 `;
+
+export const SharedTextSection = css`
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+`;
+
+export const SharedTextContainer = css`
+    height: 100%;
+    width: 100%;
+    max-width: 70rem;
+    margin: 4rem 0;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+`;

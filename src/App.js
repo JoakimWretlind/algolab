@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { DataContext, TaskContext, ImageContext } from './components/context/AllContex';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { GlobalStyle } from './globalStyle';
-import { About, BigO, CodeEditor, DataStructures, Home, Navbar, ViewCode } from './components/index';
+import { About, BigO, CodeEditor, Contact, DataStructures, Home, Navbar, ViewCode } from './components/index';
 
 function App() {
   const [value, setValue] = useState('');
@@ -22,6 +22,7 @@ function App() {
                 <Route path="/about" exact component={About} />
                 <Route path="/datastructures" exact component={DataStructures} />
                 <Route path="/bigonotation" exact component={BigO} />
+                <Route path="/contact" exact component={Contact} />
                 <Route path="/viewcode" exact component={ViewCode} />
                 <Route path="/codeeditor" exact component={CodeEditor} />
               </ImageContext.Provider>

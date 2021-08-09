@@ -14,5 +14,9 @@ export const NavbarData = [
     {
         title: "Big O Notation",
         path: "/bigonotation"
+    },
+    {
+        title: "Contact",
+        path: "/contact"
     }
 ]

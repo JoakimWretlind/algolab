@@ -43,5 +43,12 @@ export const NavItem = styled(Link)`
     color: #ffffff;
     cursor: pointer;
     font-size: clamp(2rem, 3vw, 2.2rem);
-    margin-bottom: 3rem;    
+    margin-bottom: 3rem; 
+    padding-left: 1rem;
+    border-left: .3rem solid transparent;
+    transition: .25s ease-out;
+    &:hover {
+        color: #99D0E0;
+        border-left: .3rem solid #99D0E0;
+    }
 `;
