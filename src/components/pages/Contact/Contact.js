@@ -1,3 +1,4 @@
+import Selfie from '../../images/selfie.png';
 import {
     ContactSection,
     ContactContainer,
@@ -6,10 +7,13 @@ import {
     ContactWrapper,
     ContactLeft,
     ContactRight,
-    FormContainer,
-    FormContainerRight,
     Input,
-    TextArea
+    TextArea,
+    ContactImg,
+    SelfieOverlay,
+    TextContainer,
+    SubInf,
+    InfoBorder
 } from "./ContactSection"
 
 const Contact = () => {
@@ -22,16 +26,18 @@ const Contact = () => {
                 </ContactContainer>
                 <ContactWrapper>
                     <ContactLeft>
-                        <FormContainer>
-
-                        </FormContainer>
+                        <ContactImg src={Selfie} alt="page creator" />
+                        <SelfieOverlay />
+                        <TextContainer>
+                            <MainHeader>algolab</MainHeader>
+                            <InfoBorder />
+                            <SubInf>Joakim Wretlind</SubInf>
+                        </TextContainer>
                     </ContactLeft>
                     <ContactRight>
-
                         <Input type="text" placeholder="Your Name" />
                         <Input type="email" placeholder="Your Email" />
                         <TextArea placeholder="Message"></TextArea>
-
                     </ContactRight>
                 </ContactWrapper>
             </ContactSection>
