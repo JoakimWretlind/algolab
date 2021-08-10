@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 import { GlobalStyle } from '../../globalStyle';
 import { NavbarData } from './NavbarData';
 import * as FaIcons from 'react-icons/fa';
-import { NavbarMain, NavToggle, Nav, NavItem } from './NavbarStyling'
+import { NavbarMain, NavToggleOpen, NavToggleClose, Nav, NavItem } from './NavbarStyling'
 
 const Sidebar = () => {
     const [navbar, setNavbar] = useState(false);
 
     return (
         <>
-            <NavbarMain>
+            <NavbarMain navbar={navbar}>
                 <GlobalStyle />
-                <NavToggle to="#" >
+                <NavToggleOpen >
                     <FaIcons.FaBars onClick={() => setNavbar(!navbar)} />
-                </NavToggle>
+                </NavToggleOpen>
             </NavbarMain>
             <Nav navbar={navbar}>
-                <NavToggle to="#">
+                <NavToggleClose to="#">
                     <FaIcons.FaTimes onClick={() => setNavbar(!navbar)} />
-                </NavToggle>
+                </NavToggleClose>
                 {NavbarData.map((item, index) => {
                     return <NavItem to={item.path} key={index} onClick={() => setNavbar(!navbar)}>
                         {item.title}

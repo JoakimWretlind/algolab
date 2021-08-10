@@ -1,3 +1,4 @@
+// import loadable from '@loadable/component'
 import React, { useState } from 'react';
 import { DataContext, TaskContext, ImageContext } from './components/context/AllContex';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';

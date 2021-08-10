@@ -1,3 +1,4 @@
+import emailjs from 'emailjs-com';
 import Selfie from '../../images/selfie.png';
 import {
     ContactSection,
@@ -13,10 +14,24 @@ import {
     SelfieOverlay,
     TextContainer,
     SubInf,
-    InfoBorder
-} from "./ContactSection"
+    InfoBorder,
+    SendButton
+} from "./ContactStyling"
 
 const Contact = () => {
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_TEMPLATE, e.target, process.env.REACT_APP_API)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+    };
+
     return (
         <>
             <ContactSection>
@@ -34,10 +49,12 @@ const Contact = () => {
                             <SubInf>Joakim Wretlind</SubInf>
                         </TextContainer>
                     </ContactLeft>
-                    <ContactRight>
-                        <Input type="text" placeholder="Your Name" />
-                        <Input type="email" placeholder="Your Email" />
-                        <TextArea placeholder="Message"></TextArea>
+                    <ContactRight onSubmit={sendEmail}>
+                        <Input type="text" placeholder="Header" name="subject" />
+                        <Input type="text" placeholder="Your Name" name="name" />
+                        <Input type="email" placeholder="Your Email" name="email" />
+                        <TextArea placeholder="Message" name="message"></TextArea>
+                        <SendButton type="submit">Send</SendButton>
                     </ContactRight>
                 </ContactWrapper>
             </ContactSection>

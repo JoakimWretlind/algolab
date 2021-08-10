@@ -38,10 +38,6 @@ const About = () => {
                     <AboutText>Currently, ther is just one solution to every algorithm, and it doesn't even have to be the
                         best, or most suitable. But this is version 1.0.0 of this app, so this might be changed in the future.</AboutText>
 
-                    <Subheader>Background</Subheader>
-                    <AboutText>I thought learning algorithms was a lot about searching for what and where to learn it, so I thought it would be nice to have it all in one place. Therefore I made this site, as a contribution to the community.
-                    </AboutText>
-
                     <Subheader>Contact</Subheader>
                     <AboutText>Feel free to navigate to the contact page and let me know what you think about this page, or just
                         say hello. I have a lot of ideas for upgrading this page, but it's always nice with someone elses point of

@@ -6,9 +6,7 @@ import {
     Subheader,
     BigOP,
     BigOLi,
-    BigItalicP,
-    ColorContainer,
-    BigOColor
+    BigItalicP
 } from './BigOStyling';
 
 const BigO = () => {
@@ -30,9 +28,9 @@ const BigO = () => {
 
                     <Subheader>If-Then-Else</Subheader>
                     <BigOP>if(condition) then</BigOP>
-                    <BigOP><BigItalicP>block 1</BigItalicP>(sequence of statements)</BigOP>
+                    <BigItalicP>block 1</BigItalicP><BigOP>(sequence of statements)</BigOP>
                     <BigOP>else</BigOP>
-                    <BigOP><BigItalicP>block 2</BigItalicP>(sequence of statements)</BigOP>
+                    <BigItalicP>block 2</BigItalicP><BigOP>(sequence of statements)</BigOP>
                     <BigOP>end if;</BigOP>
                     <br />
                     <BigOP>Here, either block 1 will execute, or block 2 will execute. Therefore, the worst-case time

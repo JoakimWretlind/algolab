@@ -6,10 +6,12 @@ export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Cinzel';
     src: url(${Cinzel});
+    font-display: swap;
   };
   @font-face {
     font-family: 'Code';
     src: url(${Code});
+    font-display: swap;
   };
 
   *,

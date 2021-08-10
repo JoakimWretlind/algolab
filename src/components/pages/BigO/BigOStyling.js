@@ -37,27 +37,11 @@ export const BigOP = styled.p`
     line-height: 1.4;
 `;
 
-export const ColorContainer = styled.div`
-    height: max-content;
-    width: 100%;
-    margin: 2rem 0;
-    padding: 1rem 0;
-    background-color: #ECEDF1;
-    border-radius: 1rem;
-`;
-
 export const BigOLi = styled.li`
     font-size: 1.4rem;
     line-height: 1.4;
     margin: .5rem 2rem 0.5rem;
     display: flex;
-`;
-
-export const BigOColor = styled.div`
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 50%;
-  margin-right: 2rem;
 `;
 
 export const BigItalicP = styled.p`

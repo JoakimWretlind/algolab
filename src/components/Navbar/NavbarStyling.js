@@ -6,17 +6,35 @@ export const NavbarMain = styled.div`
     margin-left: 8rem;
     z-index: 10;
 `
-export const NavToggle = styled(Link)`
+export const NavToggleOpen = styled.div`
     font-size: 3rem;
     width: min-content;
-    margin-top: 1.8rem;
-    margin-left: ${({ navbar }) => (navbar ? '-3rem' : '0rem')};
+    margin-top: 3rem;
+    margin-left: -5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: flex-end; 
+    cursor: pointer;  
+    color: #fff;
+    transition: .3s ease-out;
+    @media screen and (min-width: 767px){
+        margin-top: 5rem;
+         margin-left: ${({ navbar }) => (navbar ? '20rem' : '80%')};
+    }
+`
+
+export const NavToggleClose = styled(Link)`
+    font-size: 3rem;
+    width: min-content;
+    margin-top: 3rem;
+    margin-left: 70%;
     margin-bottom: 5rem;
     display: flex;
     justify-content: flex-end;   
     color: #fff;
     transition: .3s ease-out;
     @media screen and (min-width: 767px){
+        margin-top: 5rem;
          margin-left: ${({ navbar }) => (navbar ? '20rem' : '80%')};
     }
 `
@@ -37,7 +55,7 @@ export const Nav = styled.nav`
     @media screen and (min-width: 767px){
         padding-left: 5rem;
     }
-`
+`;
 
 export const NavItem = styled(Link)`
     color: #ffffff;
