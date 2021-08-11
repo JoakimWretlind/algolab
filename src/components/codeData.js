@@ -4,7 +4,7 @@ import arrayDoublesStr from './images/Array-RemoveDoubleStr.svg';
 import sumVals from './images/Array-SumVals.svg';
 import fibonacci from './images/fibonacci.svg';
 import fizzbuzz from './images/fizzbuzz.svg';
-import isPrime from './images/isPrime.webp';
+import isPrime from './images/isPrime.jpg';
 import palindrome from './images/palindrome.svg';
 import primeFactors from './images/primeFactors.svg';
 import revstr from './images/StrRev.svg';
