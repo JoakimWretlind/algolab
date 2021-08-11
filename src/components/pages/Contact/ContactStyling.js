@@ -72,7 +72,7 @@ export const SelfieOverlay = styled.div`
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(-15deg, rgba(1, 4, 8,.85), rgba(1, 4, 8,.9));
+    background: linear-gradient(-15deg, rgba(1, 4, 8,.80), rgba(1, 4, 8,.85));
 `;
 
 export const TextContainer = styled.div`

@@ -1,6 +1,6 @@
 import arrayConcat from './images/Array-Concatenate.svg';
 import arrayDoubles from './images/Array-RemoveDoubleInt.svg';
-import removeDoubles from './images/rmoveDuplicates.jpg';
+import removeDoubles from './images/removeDuplicates.jpg';
 import sumVals from './images/Array-SumVals.svg';
 import fibonacci from './images/fibonacci.svg';
 import fizzbuzz from './images/fizzbuzz.svg';

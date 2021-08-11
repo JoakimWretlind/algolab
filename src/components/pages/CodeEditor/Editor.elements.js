@@ -39,7 +39,7 @@ export const EditorContainer = styled.div`
   transition: .5s linear;
   @media screen and (min-width: 1000px){
     height: 100%;
-    width: ${({ solution }) => (solution ? '37%' : '100%')};
+    width: ${({ solution }) => (solution ? '30%' : '100%')};
     padding: .5rem 0 1rem;
   }
   @media screen and (min-width: 1250px){
