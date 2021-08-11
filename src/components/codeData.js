@@ -1,6 +1,6 @@
 import arrayConcat from './images/Array-Concatenate.svg';
 import arrayDoubles from './images/Array-RemoveDoubleInt.svg';
-import arrayDoublesStr from './images/rmoveDuplicates.jpg';
+import removeDoubles from './images/rmoveDuplicates.jpg';
 import sumVals from './images/Array-SumVals.svg';
 import fibonacci from './images/fibonacci.svg';
 import fizzbuzz from './images/fizzbuzz.svg';
@@ -88,7 +88,7 @@ export const Data = [
     {
         id: 22,
         title: "Remove Double Str",
-        image: arrayDoublesStr,
+        image: removeDoubles,
         task: "Remove double strings from an array",
         view: "View",
         code: "Array Editor"
