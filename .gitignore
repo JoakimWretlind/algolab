@@ -13,6 +13,7 @@
 
 # misc
 <<<<<<< HEAD
+<<<<<<< HEAD
 /.env
 .env
 =======
@@ -21,6 +22,12 @@
 .env.local
 .env.staging
 >>>>>>> 0d4a071 (changin env and mailcode)
+=======
+.env
+.env.example
+.env.local
+.env.staging
+>>>>>>> 0d4a0716594c9717e6bbb5532ba3ea8f0b08cf4b
 .DS_Store
 .env.local
 .env.development.local
