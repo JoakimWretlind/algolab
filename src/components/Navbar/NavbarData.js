@@ -16,6 +16,10 @@ export const NavbarData = [
         path: "/bigonotation"
     },
     {
+        title: "Links",
+        path: "/links"
+    },
+    {
         title: "Contact",
         path: "/contact"
     }

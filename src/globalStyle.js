@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import Cinzel from './components/fonts/CinzelRegular.ttf';
 import Code from './components/fonts/Code.otf';
+import CocoL from './components/fonts/CocoGothicLight.ttf';
+import CocoUL from './components/fonts/CocoGothicUltralight.ttf';
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -11,6 +13,16 @@ export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Code';
     src: url(${Code});
+    font-display: swap;
+  };
+  @font-face {
+    font-family: 'CocoGothicL';
+    src: url(${CocoL});
+    font-display: swap;
+  };
+  @font-face {
+    font-family: 'CocoGothic';
+    src: url(${CocoUL});
     font-display: swap;
   };
 
