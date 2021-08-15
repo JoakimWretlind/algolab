@@ -84,8 +84,17 @@ const data = [
         title: "Pexels",
         link: "https://www.pexels.com/videos",
         image: Pexels,
-        name: "Unsplash",
+        name: "Pexels",
         desc: "Great free short videos."
+    },
+    {
+        id: 120,
+        category: "images",
+        title: "Pexels",
+        link: "https://www.pexels.com",
+        image: Pexels,
+        name: "Pexels",
+        desc: "Great free images."
     }
 ];
 
