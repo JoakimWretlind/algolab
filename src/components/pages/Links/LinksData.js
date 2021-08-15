@@ -2,6 +2,7 @@ import MDN from '../../images/mdnLogo.png';
 import Clippy from '../../images/clippy.png';
 import Easings from '../../images/easings.png';
 import Codrops from '../../images/codrops.png';
+import Pexels from '../../images/pexels.png';
 import Unsplash from '../../images/unsplash.png';
 
 const data = [
@@ -76,6 +77,15 @@ const data = [
         image: Unsplash,
         name: "Unsplash",
         desc: "Great place for free images, with a simple API."
+    },
+    {
+        id: 119,
+        category: "videos",
+        title: "Pexels",
+        link: "https://www.pexels.com/videos",
+        image: Pexels,
+        name: "Unsplash",
+        desc: "Great free short videos."
     }
 ];
 

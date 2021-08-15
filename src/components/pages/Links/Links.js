@@ -88,6 +88,26 @@ const Links = () => {
                             }
                         })}
                     </SubjectContainer>
+                    {/** VIDEOS LINKS */}
+                    <LinkHeader>videos</LinkHeader>
+                    <SubjectContainer >
+                        {data.map(item => {
+                            const { id, category, link, name, title, image, desc } = item;
+                            if (category === "videos") {
+                                return (
+                                    <>
+                                        <LinkContainer key={id}>
+                                            <ImgContainer>
+                                                <LinkLogo src={image} alt={name} />
+                                            </ImgContainer>
+                                            <LinkLink href={link} target="_blank">{title}</LinkLink>
+                                            <LinkInfo>{desc}</LinkInfo>
+                                        </LinkContainer>
+                                    </>
+                                )
+                            }
+                        })}
+                    </SubjectContainer>
                 </MainContainer>
             </LinksSection>
         </>
