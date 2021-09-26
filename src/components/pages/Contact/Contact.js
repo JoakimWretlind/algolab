@@ -1,4 +1,3 @@
-import emailjs from 'emailjs-com';
 import Selfie from '../../images/selfie.png';
 import {
     ContactSection,
@@ -19,7 +18,6 @@ import {
 } from "./ContactStyling"
 
 const Contact = () => {
-
     return (
         <>
             <ContactSection>
